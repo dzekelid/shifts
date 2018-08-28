@@ -1,9 +1,11 @@
+---
 swagger: "2.0"
 x-collection-name: Clover
-x-complete: 1
+x-complete: 0
 info:
-  title: ""
+  title: Clover Get a single shift
   version: 1.0.0
+  description: Get a single shift.
 host: /merchants
 basePath: https://api.clover.com
 schemes:
@@ -157,58 +159,17 @@ paths:
       - EmpId
       - Shifts
       - ShiftId
-    post:
-      summary: Update a single shift
-      description: Update a single shift.
-      operationId: UpdateShift
-      x-api-path-slug: v3merchantsmidemployeesempidshiftsshiftid-post
-      parameters:
-      - in: body
-        name: body
-        schema:
-          $ref: '#/definitions/holder'
-      - in: path
-        name: empId
-        description: Employee Id
-      - in: query
-        name: expand
-        description: 'Expandable fields: [employee, overrideInEmployee, overrideOutEmployee]'
-      - in: path
-        name: mId
-        description: Merchant Id
-      - in: path
-        name: shiftId
-        description: Employee Shift Id
-      responses:
-        200:
-          description: OK
-      tags:
-      - Merchants
-      - Employees
-      - EmpId
-      - Shifts
-      - ShiftId
-    delete:
-      summary: Delete a single shift
-      description: Delete a single shift.
-      operationId: DeleteShift
-      x-api-path-slug: v3merchantsmidemployeesempidshiftsshiftid-delete
-      parameters:
-      - in: path
-        name: empId
-        description: Employee Id
-      - in: path
-        name: mId
-        description: Merchant Id
-      - in: path
-        name: shiftId
-        description: Employee Shift Id
-      responses:
-        200:
-          description: OK
-      tags:
-      - Merchants
-      - Employees
-      - EmpId
-      - Shifts
-      - ShiftId
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

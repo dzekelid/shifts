@@ -8,11 +8,25 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-squar
 x-kinRank: "9"
 x-alexaRank: "2433"
 tags: Shifts
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/shifts/master/_listings/square/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: Square Connect - Provides the details for all of a location's cash drawer
+    shifts during a date range. The date range you specify cannot exceed 90 days.
+  x-api-slug: v1location-idcashdrawershifts-get
+  description: Provides the details for all of a location's cash drawer shifts during
+    a date range. The date range you specify cannot exceed 90 days.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2176-square.jpg
+  humanURL: http://square.com
+  baseURL: https://connect.squareup.com//
+  tags: Payments, Credit Cards, Commerce, Stack Network, Financial Services, Mobile,
+    Technology, internet, Payments, Relative Data, Service API, Relative StreamRank,
+    Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/shifts/master/_listings/square/v1location-idcashdrawershifts-get-openapi.md
 x-common:
 - type: x-website
   url: http://square.com
